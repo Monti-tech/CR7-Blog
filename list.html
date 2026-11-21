@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f4f4;
+        color: #222;
+        padding: 30px;
+    }
+
+    /* Main container */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    /* Left side content */
+    .text {
+        flex: 1;
+        min-width: 0;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Main heading */
+    h1 {
+        color: #d71920;
+        font-size: 38px;
+        margin-bottom: 15px;
+        border-bottom: 3px solid #d71920;
+        padding-bottom: 12px;
+    }
+
+    h2 {
+        color: #111;
+        font-size: 25px;
+        margin-top: 28px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: #d71920;
+        font-size: 19px;
+        margin-top: 18px;
+        margin-bottom: 12px;
+    }
+
+    /* Lists */
+    ol,
+    ul {
+        padding-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    /* Description list */
+    dt {
+        color: #d71920;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    dd {
+        line-height: 1.7;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    /* Paragraphs */
+    p {
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    /* Right side photos */
+    .photo {
+        width: 350px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 3px solid white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    /* Image hover effect */
+    .photo img:hover {
+        transform: scale(1.04);
+    }
+
+    /* Responsive design */
+    @media (max-width: 900px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .text {
+            width: 100%;
+        }
+
+        .photo {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .photo img {
+            height: 220px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        body {
+            padding: 12px;
+        }
+
+        .text {
+            padding: 18px;
+        }
+
+        h1 {
+            font-size: 29px;
+        }
+
+        .photo {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <!-- LEFT SIDE: your existing content -->
+        <div class="text">
+
+            <h1>Cristiano Ronaldo</h1>
+            <h2>Why Peoples called him The GOAT -</h2>
+            <ol>
+                <li>Most career Goals in the history of football.</li>
+                <li>Most international Goals.</li>
+                <li>He won 2 UFEA national leagues.</li>
+                <li>He won 1 European cup fo Portugal.</li>
+                <li>He won 5 Ballon D'Or. </li>
+                <li>He won 5 UFEA Champion Leagues.</li>
+            </ol>
+            <h2>Career Goals</h2>
+            <h3>Club wise Goals</h3>
+            <ul>
+                <li>He score 450 Goals for Real Mardrid</li>
+                <li>He score 145 Goals for Manchester United</li>
+                <li>He score 101 Goals for Juventus</li>
+                <li>He score 138 Goals for Al Nassr</li>
+                <li>He score 5 Goals for Sporting CP</li>
+                <li>He score 146 Goals for Portugal</li>
+            </ul>
+            <h3>Goals Scoring Method</h3>
+            <ul>
+                <li>Open play -- 735</li>
+                <li>Penalties -- 184</li>
+                <li>Freekicks -- 66</li>
+            </ul>
+            <h2>All club career</h2>
+            <h3>Ronaldo has played for 5 major clubs during his career. He played for Manchester United twice.</h3>
+            <dl>
+                <dt>Sporting CP</dt>
+                <dd>Cristiano Ronaldo played for Sporting CP in (2002 - 2003). He played 31 matches and scored 5 goals.
+                </dd>
+                <br>
+                <dt>Manchester United</dt>
+                <dd>Cristiano Ronaldo played for Manchester United in (2003 - 2009,2021,2022). He played 364 matches and
+                    scored
+                    145 goals.</dd>
+                <br>
+                <dt>Real Mardrid</dt>
+                <dd>Cristiano Ronaldo played for Real Mardrid in (2009 - 2018). He played 438 matches and scored 450
+                    goals.</dd>
+                <br>
+                <dt>Juventus</dt>
+                <dd>Cristiano Ronaldo played for Juventus in (2018 - 2021). He played 134 matches and scored 101 goals.
+                </dd>
+                <br>
+                <dt>Al Nassr</dt>
+                <dd>Cristiano Ronaldo played for Juventus in (2023 - Present). He played 160 matches and scored 138
+                    goals.</dd>
+            </dl>
+
+            <h2>Cristiano Ronaldo's Lifestyle</h2>
+            <p>Cristiano Ronaldo lives a luxurious, disciplined, and fitness-focused lifestyle. He is famous not only
+                for his football skills but also for his hard work, dedication, and healthy habits. He follows a strict
+                daily routine that includes regular exercise, strength training, cardio, and proper rest. His diet
+                mainly consists of healthy foods such as fish, chicken, vegetables, fruits, and whole grains. Ronaldo
+                avoids unhealthy food and focuses on staying physically fit. He enjoys spending quality time with his
+                family, especially his children and partner. He owns luxurious houses, expensive cars, stylish watches,
+                and beautiful properties around the world. He also enjoys travelling, swimming, relaxing, and spending
+                time with friends. Along with football, Ronaldo is a successful businessman with his own CR7 brand,
+                which includes clothing, perfumes, hotels, and fitness products.
+
+                Ronaldo is also active on social media, where millions of fans follow his fitness routine, fashion,
+                family life, and achievements. Despite his wealth and fame, he believes in discipline, confidence,
+                consistency, and never giving up. His lifestyle teaches us that success comes through hard work,
+                self-belief, dedication, and a positive attitude.</p>
+
+            <h2>Cristiano Ronaldo's Fitness</h2>
+            <p>Cristiano Ronaldo is famous for his excellent fitness, strength, and athletic body. He follows a strict
+                workout routine that includes weight training, running, cardio, swimming, and stretching. He maintains a
+                healthy diet with protein-rich foods, fruits, vegetables, and plenty of water. He also focuses on proper
+                sleep and recovery to keep his body strong and active. His discipline, hard work, and dedication make
+                him one of the fittest footballers in the world.</p>
+
+        </div>
+
+        <!-- RIGHT SIDE: photo -->
+        <div class="photo">
+            <img src="https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_110,w_3800,h_2137/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/si/01jax337b2ke5w1q2c2e.jpg"
+                alt="Cristiano Ronaldo">
+            <br>
+
+            <img src="https://st2.depositphotos.com/7237548/10008/i/450/depositphotos_100081176-stock-photo-footballer-cristiano-ronaldo.jpg"
+                alt="Cristiano Ronaldo">
+            <br>
+
+            <img src="https://media.gettyimages.com/id/2240657943/photo/lisbon-portugal-cristiano-ronaldo-of-portugal-celebrates-after-scoring-his-teams-first-goal.jpg?s=612x612&w=0&k=20&c=1uo_I9TjBCeCkNTWlUlwp0uwyGIFffRUc_-ZxCsYRgk="
+                alt="Cristiano Ronaldo">
+            <br>
+            <img src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/8ba6/live/a3e114a0-8c89-11ef-8537-35d6ce5671fe.jpg"
+                alt="Cristiano Ronaldo">
+            <br>
+
+            <img src="https://media.gettyimages.com/id/80308419/photo/manchester-united-kingdom-cristiano-ronaldo-of-manchester-united-celebrates-as-he-scores-their.jpg?s=612x612&w=0&k=20&c=_rKFgrrPHX6V296degUu57wAbhYkygoZfrWXM6rPOYw="
+                alt="Cristiano Ronaldo">
+            <br>
+
+            <img src="https://i.pinimg.com/originals/72/b3/d2/72b3d2e3672568908c5c656686b3b7d4.jpg"
+                alt="Cristiano Ronaldo">
+            <br>
+
+            <img src="https://i.pinimg.com/originals/9c/f7/15/9cf715aa0c93e53301f6edea6b2c9a27.jpg" alt="Cristiano Ronaldo">
+            <br>
+            
+            <img src="https://static.toiimg.com/thumb/113229229.jpg?photoid=113229229&imgsize=1504237&width=600&height=335&resizemode=75" alt="Cristiano Ronaldo">
+        </div>
+
+    </div>
+</body>
+
+</html>
